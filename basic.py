@@ -169,3 +169,184 @@ elif w > l:
     print("w is greater")
 else:
     print("Both are equal")
+
+#                                            🟢 3. If-Else — Q31 to Q50
+
+# 31. Check whether a number is positive or negative
+num = int(input("Enter a number: "))
+
+if num > 0:
+    print(f"{num} is positive")
+elif num < 0:
+    print(f"{num} is negative")
+else:
+    print(f"{num} is zero")
+
+# 32. Check whether a number is positive, negative, or zero
+num = int(input("Enter a number: "))
+
+if num > 0:
+    print(f"{num} is positive")
+elif num < 0:
+    print(f"{num} is negative")
+else:
+    print(f"{num} is zero")
+
+
+# 33. Check whether a number is even or odd.
+num=int(input("Enter a number :"))
+if num%2==0:
+    print(f"{num} is even")
+else:
+    print(f"{num} is odd")
+
+#34. Check whether a person is eligible to vote.
+age=int(input("Enter your age :"))
+if age >= 18:
+    print("person is eligible to vote")
+else:
+    print("person is Not eligible to vote")
+
+#35. Check whether a person is eligible for a driving license.
+age=int(input("Enter your age :"))
+if age >= 18:
+    print("person is eligible for a driving license")
+else:
+    print("person is Not eligible for a driving license")
+
+#36. Check whether a student has passed or failed.
+mark=float(input("Enter your marks :"))
+if mark >= 35:
+    print("pass")
+else:
+    print("Fail")
+
+#37. Check whether marks are greater than 50.
+mark=[78,58,98,65,85,97,45,20,30]
+for i in mark:
+    if i >= 50:
+        print(i)
+#38. Find the greater of two numbers.
+num1=int(input("Enter first number"))
+num2=int(input("Enter second number"))
+if num1 > num2:
+    print(f"{num1} is greter then {num2}")
+elif num2 > num1:
+    print(f"{num2} is greter then {num1}")
+else:
+    print("Both are equal")
+#39. Find the largest of three numbers.
+num1=int(input("Enter first number"))
+num2=int(input("Enter second number"))
+num3=int(input("Enter thered number"))
+if num1 >= num2 and num1 >= num3:
+    print(f"{num1} is greter then {num2} and {num3}")
+elif num1 >= num2 and num1 >= num3:
+    print(f"{num2} is greter then {num1} and {num3}")
+else:
+    print(f"{num3} is greter then {num2} and {num3}")
+
+#40. Find the smallest of three numbers.
+num1=int(input("Enter first number"))
+num2=int(input("Enter second number"))
+num3=int(input("Enter thered number"))
+if num1 <= num2 and num1 <= num3:
+    print(f"{num1} is smallest")
+elif num1 <= num2 and num1 <= num3:
+    print(f"{num2} is smallest ")
+else:
+    print(f"{num3} is smallest ")
+
+#41. Check whether a number is divisible by 5.
+num=int(input("Enter a number :"))
+if num%5==0:
+    print(f"{num} is divisible by 5 ")
+else:
+    print(f"{num} is not divisible by 5")
+
+#42. Check whether a number is divisible by both 5 and 10.
+num=int(input("Enter a number :"))
+if num%5==0 and num%10==0:
+    print(f"{num} is divisible by 5 and 10")
+else:
+    print(f"{num} is not divisible by 5 and 10")
+
+#43. Check whether a person is a child, adult, or senior citizen.
+age=int(input("Enter your age :"))
+if age < 18:
+    print("child")
+elif age < 60:
+    print("adult")
+else:
+    print("senior citizen")
+
+#44. Create a grade system using marks.
+mark=int(input("Enter your marks :"))
+if mark > 90:
+    print("A+")
+elif mark < 90 and mark > 80:
+    print("A")
+elif mark < 80 and mark > 70:
+    print("B")
+elif mark < 70 and mark > 60:
+    print("C")
+elif mark < 60 and mark > 50:
+    print("D")
+elif mark < 40 and mark > 35:
+    print("E")
+else:
+    print("F")
+
+#45. Create an age-based ticket price program.
+age=int(input("Enter your age :"))
+if age <= 5:
+    result=100
+elif age > 5 and age < 18:
+    result=200
+else:
+    result=250
+print(result)
+
+#46. Check whether a year is a leap year.
+# 46. Check whether a year is a leap year
+year = int(input("Enter year: "))
+
+if year % 400 == 0 or (year % 4 == 0 and year % 100 != 0):
+    print("Leap year")
+else:
+    print("Not a leap year")
+
+# 47. Check whether a character is a vowel or consonant.
+str=input("Enter character :")
+vowel="aeiou"
+
+if vowel in str:
+    print("Vowel")
+else:
+    print("alphabat")
+
+#48. Check whether a number is between 10 and 50.
+num=int(input("Enter a number :"))
+if num > 10 and num <= 50:
+    print("number is between 10 and 50")
+else:
+    print("number is not between 10 and 50")
+
+# 49. Check whether a student is eligible for an exam based on attendance.
+days=int(input("Enter your attendance :"))
+if days >= 80:
+    print("eligible for an exam")
+else:
+    print("Not eligible for an exam")
+
+#50. Create a simple login program using username and password.
+username1=input("Enter username :")
+password1=input("Enter password :")
+
+username='adilpatel'
+password='adil123'
+
+if username1 == username and password1 == password:
+    print("login sucsessful")
+else:
+    print("invalid password and username")
