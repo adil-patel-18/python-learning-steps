@@ -350,3 +350,111 @@ if username1 == username and password1 == password:
     print("login sucsessful")
 else:
     print("invalid password and username")
+#                                                  🔵 4. For Loop — Q51 to Q70
+#51. Print numbers from 1 to 10.
+for i in range(1,11):
+    print(i)
+
+#52. Print numbers from 10 to 1.
+for i in range(10,0,-1):
+    print(i)
+
+#53. Print even numbers from 1 to 20.
+for i in range(2,21,2):
+    print(i)
+
+#54. Print odd numbers from 1 to 20.
+for i in range(1,21,2):
+    print(i)
+
+#55. Print numbers from 1 to 50.
+for i in range(1,51,1):
+    print(i)
+
+#56. Print multiples of 5 from 1 to 50.
+for i in range(1,51,1):
+    print(i*5)
+
+#57. Print the multiplication table of 5.
+for i in range(5,51,5):
+    print(i)
+
+#58. Take a number and print its multiplication table.
+n=int(input("Enter a number :"))
+for i in range(n,n*11,n):
+    print(i)
+
+#59. Calculate the sum of numbers from 1 to 10.
+sum=0
+for i in range(1,11):
+    sum+=i
+print(sum)
+
+#60. Calculate the sum of numbers from 1 to `n`.
+n=int(input("Enter a number :"))
+sum=0
+for i in range(1,n+1):
+    sum+=i
+print(sum)
+
+#61. Calculate the sum of even numbers from 1 to 50.
+count=0
+for i in range(1,51):
+    if i%2==0:
+        count+=i
+print(count)
+
+#62. Calculate the sum of odd numbers from 1 to 50.
+count=0
+for i in range(1,51):
+    if i%2!=0:
+        count+=1
+print(count)
+
+#63. Print squares of numbers from 1 to 10.
+for i in range(1,11):
+    print(i*i)
+
+#64. Print cubes of numbers from 1 to 10.
+for i in range(1,11):
+    print(i**3)
+
+#65. Count numbers from 1 to 100 divisible by 5.
+count=0
+for i in range(1,101):
+    if i%5==0:
+        count+=1
+print(count)
+
+#66. Print all numbers divisible by 3 between 1 and 50.
+for i in range(1,51):
+    if i%3==0:
+        print(i)
+
+#67. Print each character of a string.
+str="Adil Azeem Patel"
+for i in str:
+    print(i)
+
+#68. Count the characters in a string using a loop.
+count=0
+str="Adil Azeem Patel"
+for i in range(len(str)):
+    if i != -1:
+        count+=1
+print(count)
+
+#69. Count vowels in a string using a loop.
+count=0
+vowel='aeoui'
+str="Adil Azeem Patel"
+for i in str:
+    if i in vowel:
+        count+=1
+print(count)
+
+#70. Find the factorial of a number using a loop.
+fact=1
+for i in range(1, 6):
+    fact = fact * i
+print(fact)
