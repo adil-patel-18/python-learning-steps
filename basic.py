@@ -458,3 +458,125 @@ fact=1
 for i in range(1, 6):
     fact = fact * i
 print(fact)
+
+                                          # 🟣 6. Strings — Q86 to Q105
+#86. Take a string and print its length.
+str="Adil Patel"
+print(len(str))
+
+#87. Print the first character of a string.
+print(str[0])
+
+#88. Print the last character of a string.
+print(str[-1])
+
+#89. Print a string in uppercase.
+print(str.upper())
+
+#90. Print a string in lowercase.
+print(str.lower())
+
+#91. Count vowels in a string.
+str="adil Patel"
+vowel='aeiou'
+count=0
+for i in str:
+    if i in vowel:
+        count+=1
+print(count)
+
+#92. Count consonants in a string.
+str="adil Patel"
+vowel='aeiou'
+count=0
+for i in str:
+    if i not in vowel:
+        count+=1
+print(count)
+
+#93. Count spaces in a string.
+str="adil Patel Azeem"
+vowel=' '
+count=0
+for i in str:
+    if i in vowel:
+        count+=1
+print(count)
+
+#94. Count a particular character in a string.
+print(str.count("a"))
+
+#95. Check whether a string contains the letter `a`.
+str="adil Patel Azeem"
+space=' '
+char='a'
+con=0
+for i in str:
+    if i in char and i != space:
+        con=con = i
+print(con)
+
+#96. Reverse a string.
+str="adil Patel Azeem"
+print(str[::-1])
+
+#97. Check whether a string is palindrome.
+str='aba'
+a=str
+rev=str[::-1]
+if a==rev:
+    print("palindrome")
+else:
+    print("not palindrome")
+
+#98. Remove spaces from a string.
+str="adil Patel Azeem"
+print(str.replace(' ',''))
+
+#99. Replace a word in a string.
+str="adil Patel Azeem"
+print(str.replace('adil','iqra'))
+
+#100. Split a sentence into words.
+list='adil iqra patel'
+print(list.split())
+
+#101. Join a list of words into a string.
+list=['adil','iqra']
+print(" ".join(list))
+
+#102. Count the number of words in a sentence.
+str='my name is adil patel'
+space=' '
+count=0
+for i in str:
+    if i not in space:
+        count+=1
+print(count)
+
+#103. Find the longest word in a sentence.
+#104. Print each word of a sentence on a new line.
+str='my name is adil patel'
+next=0
+space=' '
+for i in str:
+    print(i,end="")
+    if i == space:
+        print("")
+    
+#105. Count uppercase and lowercase characters in a string.
+str="adil Patel Azeem"
+upper1=0
+lower1=0
+space1=0
+d=' '
+upper=str.upper()
+for i in str:
+    if i in upper and i not in d:
+        upper1+=1
+    elif i not in upper and i not in d:
+        lower1+=1
+    else:
+        space1+=1    
+
+print(f"upper charecter is {upper1}.\nlower charecter is {lower1}.\nspace is {space1}")
