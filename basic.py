@@ -580,3 +580,67 @@ for i in str:
         space1+=1    
 
 print(f"upper charecter is {upper1}.\nlower charecter is {lower1}.\nspace is {space1}")
+
+# 🟤 7. Lists — Q106 to Q120
+
+#106. Create a list of 5 numbers and print it.
+list=[1,2,3,4,5]
+print(list)
+
+#107. Print the first element of a list.
+print(list[0])
+
+#108. Print the last element of a list.
+print(list[-1])
+
+#109. Add an element using `append()`.
+list.append(6)
+print(list)
+
+#110. Insert an element using `insert()`.
+list.insert(2,7)
+print(list)
+
+#111. Remove an element using `remove()`.
+list.remove(4)
+print(list)
+
+#112. Remove the last element using `pop()`.
+list.pop()
+print(list)
+
+#113. Sort a list.
+print(list.sort())
+
+#114. Reverse a list.
+print(list.sort(reverse=True))
+
+#115. Find the largest number  `max()`.
+print(max(list))
+
+#116. Find the smallest number  `min()`.
+print(min(list))
+
+#117. Find the sum of a list  `sum()`.
+print(sum(list))
+
+#118. Count even numbers in a list.
+even=0
+for i in list:
+    if i%2==0:
+        even+=1
+print(even)
+
+#119. Count odd numbers in a list.
+odd=0
+for i in list:
+    if i%2!=0:
+        odd+=1
+print(odd)
+
+#120. Create a new list containing only numbers greater than 50.
+list=[10,20,30,40,50,60,70]
+for i in list:
+    if i > 50:
+        print(i)
+
